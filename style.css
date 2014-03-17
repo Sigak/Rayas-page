@@ -1,0 +1,232 @@
+body, html {
+	margin:0px;
+	padding:0px;
+	background:#FFF0F5 url(img/bg1.jpg) no-repeat fixed center bottom;
+	overflow-x: auto;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+body{
+	background:url(img/bg-top.gif) no-repeat right top;
+}
+
+h1,h2,h3{font-style:italic; color:#EE6363; margin:0px 5px 5px;
+		text-indent:0px; /* ќтступ первой строки */
+}
+
+
+.round {	background: url(img/but1.gif) top left no-repeat;}
+.round div {	background: url(img/but2.gif) top right no-repeat;}
+.round div h4{
+	margin:0px 9px;
+	text-decoration: none;
+	text-indent:0px; /* ќтступ первой строки */
+	border-bottom:1px solid lightgray;
+	border-top:1px solid #efefef;
+	background: url(img/but.jpg) repeat-x;
+	color: #0081ff;
+	vertical-align: bottom;
+	text-align: center;
+	text-shadow: #fff 1px 1px 0px;
+}
+
+p{text-indent: 30px; /* ќтступ первой строки */
+		font-size: 12pt;
+		margin:5px auto;
+}
+
+i{font-size: 13pt;}
+
+button{margin:10px 0 0;}
+
+ul , dl{
+	list-style:none;
+    margin:0;
+	padding:0;
+	overflow:auto;
+/*	text-align:justify;  - действует и на ul услуг и на dl статей, иначе услуги по левому краю, а статьи по центру */
+}
+
+dt {padding: 5px 0;}
+
+header{
+	width:100%; min-width:800px; width:"1000px";
+	margin:0 auto;
+	background:url(img/me.gif) no-repeat;
+	height: 230px; /* 250-padding сверху и снизу */
+	padding:10px 200px;
+}
+
+.vk, .email, .map{
+	display:inline-block;
+	width: 48px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.reserve {
+	background: url(img/but1.gif) top left no-repeat; 
+	display:inline-block;
+	vertical-align: top;	
+	height: 35px;
+	cursor: pointer;
+}
+
+.reserve  div{ 
+	background: url(img/but2.gif) top right no-repeat; 
+	height: 25px; 
+	padding: 5px 0;
+}
+
+.reserve  div a{	
+	background: url(img/but_s.gif) repeat-x;
+	margin:0 9px;
+	padding: 5px 0;
+	color:#0099ff;
+	font: italic 16pt serif;
+	text-decoration: underline;
+}
+
+.vk:hover, .email:hover, .map:hover, .reserve div a:hover {background-position:0 -36px;}
+.reserve div a:hover {text-shadow: LightBlue 1px 1px 0px, #fff -1px -1px 0px;}
+.vk {background: url(img/vk.gif) no-repeat;}
+.email{background: url(img/email.gif) no-repeat;}
+.map{background: url(img/map.gif) no-repeat;}
+
+#layout {
+	width:1250px;
+	margin:0 auto;
+	border:1px solid transparent;
+	background:url(img/left_bg.gif) no-repeat left bottom;
+}
+
+aside ul{
+	width:200px;
+	float:right;
+	margin-right:150px;
+}
+
+aside ul li{
+    background: rgba(255, 250, 250, 0.9);
+	padding:5px; /* отступ дл€ текста */
+	margin:5px; /* отступ дл€ пунктов списка */
+	text-align:center;
+}
+
+article{
+	width:735px;
+	background: rgba(255, 250, 250, 0.8);
+	padding:5px; /* отступ дл€ текста */
+	margin:5px; /* отступ дл€ блоков */
+	margin-left:155px;
+}
+
+.two_columns li{
+	float:left;
+	width:47%;
+	overflow:auto;
+	height: 222px;
+	padding:10px;	
+}
+
+.continue {overflow: hidden;}
+
+.two_columns b{display:block;
+text-align: right;
+width: 100%;
+}
+
+a.rollover {text-decoration: underline;
+		color: blue;
+		cursor: pointer
+}
+
+a.rollover img{
+    position: absolute;
+    display: none;
+    margin-top:20px; 
+    border:1px solid black;
+}
+
+a.rollover:hover img { 
+    display: block; 
+   }
+
+.paranja {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, 0.5);
+	cursor: default;
+}
+   
+.popup{
+	display: none;
+	position: fixed;
+	width:500px;  
+	margin: auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin-top:100px;
+	background-color:rgba(255, 250, 250, 1);
+	border:1px solid black;
+	overflow:auto;
+	padding: 10px;
+	height:500px;
+}
+
+.paranja:target, .paranja:target+.popup {display:block;}
+
+.close_but { 
+	color:#8B8878; 
+	text-decoration:none;
+	position: absolute;
+	right:0;
+	top:0;
+	font: 13pt sans-serif;
+	padding:1px 7px;
+}
+
+.close_but:hover {border: 1px dotted;}
+
+form ul li{
+	padding:5px;
+}
+
+form fieldset ul li{
+	float:left;
+	overflow:auto;
+	padding:5px;
+}
+
+form textarea{width:80%}
+
+#feedback button{
+	position:relative;
+	left:40%; 
+}
+
+footer{
+	background: rgba(255, 250, 250, 0.8);
+	margin:5px; /* отступ дл€ блоков */
+	clear: both;
+	font-size: 11pt;
+	color:grey;
+	text-align: center;
+	width:1020px;
+	margin-left:125px;
+}
+
+footer span {
+	border-right:1px solid lightgray;
+	padding:0px 20px;
+}
